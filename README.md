@@ -20,7 +20,7 @@ $ npm run generate
 Documentation of [Nuxt](https://github.com/nuxt/nuxt.js)
 
 Plugins and modules
-* Vue Resource
+* Axios
 * Vue Scrollto
 * Vue The Mask
 * Vue Scroll Show
