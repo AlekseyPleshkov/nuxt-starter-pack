@@ -26,3 +26,4 @@ Plugins and modules
 * Vue Scroll Show
 * Vue Scroll Focus
 * Nuxt Social Meta
+* Hydra Stylus mixins

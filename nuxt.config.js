@@ -14,12 +14,17 @@ module.exports = {
     ]
   },
   /*
+  ** Stylus
+  */
+  css: [
+    { src: '~/assets/stylus/main.styl', lang: 'stylus' }
+  ],
+  /*
   ** Plugins
   */
   plugins: [
     '~plugins/vue-the-mask',
     '~plugins/vue-scrollto',
-    '~plugins/vue-resource',
     '~plugins/vue-scroll-show',
     '~plugins/vue-scroll-focus',
     '~plugins/vue-axios'
