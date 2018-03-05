@@ -21,7 +21,8 @@ module.exports = {
     '~plugins/vue-scrollto',
     '~plugins/vue-resource',
     '~plugins/vue-scroll-show',
-    '~plugins/vue-scroll-focus'
+    '~plugins/vue-scroll-focus',
+    '~plugins/vue-axios'
   ],
   /*
    ** Router
