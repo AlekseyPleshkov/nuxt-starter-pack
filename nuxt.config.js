@@ -23,11 +23,12 @@ module.exports = {
   ** Plugins
   */
   plugins: [
+    '~plugins/vue-axios',
     '~plugins/vue-the-mask',
     '~plugins/vue-scrollto',
     '~plugins/vue-scroll-show',
     '~plugins/vue-scroll-focus',
-    '~plugins/vue-axios'
+    '~plugins/vue-form-send'
   ],
   /*
    ** Router

@@ -21,7 +21,8 @@
     "vue-scrollto": "^2.9.0",
     "vue-the-mask": "^0.11.1",
     "vue-axios": "2.0.2",
-    "nuxt-social-meta": "0.0.1"
+    "nuxt-social-meta": "0.0.1",
+    "vue-form-send": "0.0.4"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.2",

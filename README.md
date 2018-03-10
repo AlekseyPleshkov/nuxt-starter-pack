@@ -20,10 +20,11 @@ $ npm run generate
 Documentation of [Nuxt](https://github.com/nuxt/nuxt.js)
 
 Plugins and modules
-* Axios
+* Axios & Vue Axios
 * Vue Scrollto
 * Vue The Mask
 * Vue Scroll Show
 * Vue Scroll Focus
+* Vue Form Send
 * Nuxt Social Meta
 * Hydra Stylus mixins
