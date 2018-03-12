@@ -37,4 +37,5 @@ PostCSS plugins
 * [lost](http://lostgrid.org)
 * [postcss-bgimage](https://github.com/ahtohbi4/postcss-bgimage)
 * [postcss-adaptive-size](https://github.com/AlekseyPleshkov/postcss-adaptive-size)
+* [postcss-color-function](https://github.com/postcss/postcss-color-function)
 * [postcss-pxtorem](https://github.com/cuth/postcss-pxtorem)

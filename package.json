@@ -16,6 +16,7 @@
     "axios": "0.18.0",
     "nuxt": "^1.4.0",
     "nuxt-social-meta": "0.0.1",
+    "sugarss": "^1.0.1",
     "vue-axios": "2.0.2",
     "vue-form-send": "0.0.4",
     "vue-scroll-focus": "0.0.2",
@@ -35,12 +36,13 @@
     "eslint-plugin-standard": "^3.0.1",
     "lost": "^8.2.1",
     "node-sass": "^4.7.2",
+    "postcss-adaptive-size": "0.0.1",
     "postcss-bgimage": "^2.0.1",
+    "postcss-color-function": "^4.0.1",
+    "postcss-inject": "^1.0.1",
     "postcss-nested": "^3.0.0",
     "postcss-nested-ancestors": "^1.0.0",
     "postcss-pxtorem": "^4.0.1",
-    "postcss-inject": "^1.0.1",
-    "postcss-adaptive-size": "0.0.1",
     "pug": "^2.0.0-rc.4",
     "pug-loader": "^2.3.0"
   }

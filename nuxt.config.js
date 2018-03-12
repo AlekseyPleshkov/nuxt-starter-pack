@@ -78,28 +78,31 @@ module.exports = {
     /*
     ** Postcss plugins
     */
-    postcss: [
-      require('postcss-inject')({
-        cssFilePath: 'assets/css/var.css'
-      }),
-      require('postcss-import')({
-        path: ['assets/css']
-      }),
-      require('postcss-cssnext')({
-        browsers: ['last 2 versions', '> 1%']
-      }),
-      require('postcss-nested-ancestors')(),
-      require('postcss-nested')(),
-      require('lost')(),
-      require('postcss-bgimage')({
-        mode: 'cutter'
-      }),
-      require('postcss-adaptive-size')(),
-      require('postcss-pxtorem')({
-        propList: ['font', 'font-size', 'line-height', 'letter-spacing'],
-        replace: false
-      })
-    ]
+    postcss: {
+      plugins: [
+        require('postcss-inject')({
+          cssFilePath: 'assets/css/var.css'
+        }),
+        require('postcss-import')({
+          path: ['assets/css']
+        }),
+        require('postcss-cssnext')({
+          browsers: ['last 2 versions', '> 1%']
+        }),
+        require('postcss-nested-ancestors')(),
+        require('postcss-nested')(),
+        require('lost')(),
+        require('postcss-bgimage')({
+          mode: 'cutter'
+        }),
+        require('postcss-adaptive-size')(),
+        require('postcss-color-function')(),
+        require('postcss-pxtorem')({
+          propList: ['font', 'font-size', 'line-height', 'letter-spacing'],
+          replace: false
+        })
+      ]
+    }
   },
 
   /**
