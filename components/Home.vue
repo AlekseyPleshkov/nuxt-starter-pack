@@ -6,6 +6,7 @@ section.home
 
 <style lang="postcss">
 .home {
+  adaptive: 300px 200px;
   background: var(--bg);
 
   h1 {

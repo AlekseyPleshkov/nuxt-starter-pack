@@ -94,6 +94,7 @@ module.exports = {
       require('postcss-bgimage')({
         mode: 'cutter'
       }),
+      require('postcss-adaptive-size')(),
       require('postcss-pxtorem')({
         propList: ['font', 'font-size', 'line-height', 'letter-spacing'],
         replace: false

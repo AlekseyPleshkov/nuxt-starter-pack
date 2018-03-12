@@ -40,6 +40,7 @@
     "postcss-nested-ancestors": "^1.0.0",
     "postcss-pxtorem": "^4.0.1",
     "postcss-inject": "^1.0.1",
+    "postcss-adaptive-size": "0.0.1",
     "pug": "^2.0.0-rc.4",
     "pug-loader": "^2.3.0"
   }

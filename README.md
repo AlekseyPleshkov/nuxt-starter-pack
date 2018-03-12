@@ -36,4 +36,5 @@ PostCSS plugins
 * [postcss-nested](https://github.com/postcss/postcss-nested)
 * [lost](http://lostgrid.org)
 * [postcss-bgimage](https://github.com/ahtohbi4/postcss-bgimage)
+* [postcss-adaptive-size](https://github.com/AlekseyPleshkov/postcss-adaptive-size)
 * [postcss-pxtorem](https://github.com/cuth/postcss-pxtorem)
