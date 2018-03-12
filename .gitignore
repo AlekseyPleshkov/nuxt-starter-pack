@@ -1,8 +1,11 @@
 # dependencies
 node_modules
+yarn.lock
+package-lock.json
 
 # logs
 npm-debug.log
+yarn-error.log
 
 # Nuxt build
 .nuxt

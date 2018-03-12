@@ -13,29 +13,32 @@ module.exports = {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
+
   /*
-  ** Stylus
+  ** Load global style
   */
   css: [
-    { src: '~/assets/stylus/main.styl', lang: 'stylus' }
+    { src: './assets/css/default.css', lang: 'postcss' }
   ],
+
   /*
   ** Plugins
   */
   plugins: [
     '~plugins/vue-axios',
-    '~plugins/vue-the-mask',
     '~plugins/vue-scrollto',
+    '~plugins/vue-the-mask',
     '~plugins/vue-scroll-show',
     '~plugins/vue-scroll-focus',
     '~plugins/vue-form-send'
   ],
+
   /*
    ** Router
    */
   router: {
+    mode: 'hash'
     // base: '/dir/',
-    // mode: 'hash',
     // extendRoutes (routes, resolve) {
     //   routes.push({
     //     name: '/',
@@ -44,14 +47,20 @@ module.exports = {
     //   })
     // }
   },
+
   /*
   ** Customize the progress bar color
   */
-  loading: { color: '#3B8070' },
+  loading: {
+    color: '#3B8070'
+  },
+
   /*
   ** Build configuration
   */
   build: {
+    // Extract css to file
+    extractCSS: true,
     /*
     ** Run ESLint on save
     */
@@ -64,6 +73,43 @@ module.exports = {
           exclude: /(node_modules)/
         })
       }
-    }
-  }
+    },
+
+    /*
+    ** Postcss plugins
+    */
+    postcss: [
+      require('postcss-import')({
+        path: ['assets/css']
+      }),
+      require('postcss-cssnext')({
+        browsers: ['last 2 versions', '> 1%']
+      }),
+      require('postcss-nested-ancestors')(),
+      require('postcss-nested')(),
+      require('lost')(),
+      require('postcss-bgimage')({
+        mode: 'cutter'
+      }),
+      require('postcss-pxtorem')({
+        propList: ['font', 'font-size', 'line-height', 'letter-spacing'],
+        replace: false
+      })
+    ]
+  },
+
+  /**
+   * Modules
+   */
+  modules: [
+    ['nuxt-social-meta', {
+      url: 'Site url',
+      title: 'Title site',
+      description: 'Description site',
+      img: 'Link to image in static folder',
+      locale: 'ru_RU',
+      twitter: '@UserName',
+      themeColor: '#ThemeColor'
+    }]
+  ]
 }

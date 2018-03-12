@@ -1,6 +1,6 @@
 # hydra-webpack-nuxt
 
-Vue/Nuxt starter pack
+Vue/Nuxt starter pack. Pug and PostCSS.
 
 ## Install
 
@@ -27,4 +27,12 @@ Plugins and modules
 * Vue Scroll Focus
 * Vue Form Send
 * Nuxt Social Meta
-* Hydra Stylus mixins
+
+PostCSS plugins
+* [postcss-import](https://github.com/postcss/postcss-import)
+* [postcss-cssnext](https://github.com/MoOx/postcss-cssnext)
+* [postcss-nested-ancestors](https://github.com/toomuchdesign/postcss-nested-ancestors)
+* [postcss-nested](https://github.com/postcss/postcss-nested)
+* [lost](http://lostgrid.org)
+* [postcss-bgimage](https://github.com/ahtohbi4/postcss-bgimage)
+* [postcss-pxtorem](https://github.com/cuth/postcss-pxtorem)

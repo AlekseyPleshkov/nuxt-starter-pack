@@ -4,10 +4,15 @@ section.home
 </template>
 
 
-<style lang="stylus" scoped>
-@import '~assets/stylus/app'
+<style lang="postcss">
+@import 'var.css';
 
-.home
-  size(50%)
-  margin: 0 auto
+.home {
+  background: var(--bg);
+
+  h1 {
+    @apply --text;
+  }
+}
 </style>
+
