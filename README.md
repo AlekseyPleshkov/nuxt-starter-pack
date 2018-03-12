@@ -29,6 +29,7 @@ Plugins and modules
 * Nuxt Social Meta
 
 PostCSS plugins
+* [postcss-inject](https://github.com/iamfrntdv/postcss-inject)
 * [postcss-import](https://github.com/postcss/postcss-import)
 * [postcss-cssnext](https://github.com/MoOx/postcss-cssnext)
 * [postcss-nested-ancestors](https://github.com/toomuchdesign/postcss-nested-ancestors)

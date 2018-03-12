@@ -79,6 +79,9 @@ module.exports = {
     ** Postcss plugins
     */
     postcss: [
+      require('postcss-inject')({
+        cssFilePath: 'assets/css/var.css'
+      }),
       require('postcss-import')({
         path: ['assets/css']
       }),

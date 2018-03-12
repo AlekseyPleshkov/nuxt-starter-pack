@@ -5,8 +5,6 @@ section.home
 
 
 <style lang="postcss">
-@import 'var.css';
-
 .home {
   background: var(--bg);
 

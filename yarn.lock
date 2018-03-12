@@ -4971,6 +4971,13 @@ postcss-initial@^2.0.0:
     lodash.template "^4.2.4"
     postcss "^6.0.1"
 
+postcss-inject@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/postcss-inject/-/postcss-inject-1.0.1.tgz#b981f15647ae666cb479400948bc825b1b1845d7"
+  dependencies:
+    object-assign "^4.1.0"
+    postcss "^5.0.21"
+
 postcss-load-config@^1.1.0, postcss-load-config@^1.2.0:
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/postcss-load-config/-/postcss-load-config-1.2.0.tgz#539e9afc9ddc8620121ebf9d8c3673e0ce50d28a"
