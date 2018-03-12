@@ -19,15 +19,32 @@
   font-style: normal;
 }
 
+* {
+  outline: none !important;
+  box-sizing: inherit;
+
+  &::before,
+  &::after {
+    box-sizing: inherit;
+  }
+
+  &:active,
+  &:focus {
+    outline: none !important;
+  }
+}
+
 html, body {
   width: 100%;
   min-height: 100%;
   margin: 0;
   padding: 0;
-  background: var(--color-bg);
+  background-color: var(--color-bg);
+  box-sizing: border-box;
 
   color: var(--color-text);
   font: var(--fs-normal) var(--ff-normal);
+  line-height: normal;
   letter-spacing: normal;
   font-weight: normal;
   font-style: normal;
@@ -101,9 +118,8 @@ input {
   box-sizing: border-box;
   border-radius: 4px;
   border: 1px solid var(--color-primary);
-  background: #fff;
+  background-color: #fff;
 
-  outline: none;
   vertical-align: middle;
   white-space: nowrap;
   transition: border-color .3s ease-in-out, box-shadow .3s ease-in-out;
@@ -113,7 +129,6 @@ input {
   }
 
   &:focus {
-    outline: none;
     border-color: color(var(--color-primary) shade(10%));
     box-shadow: 0 0 6px 2px color(var(--color-primary) a(60%));
   }
@@ -129,17 +144,16 @@ button {
   box-sizing: border-box;
   border-radius: 4px;
   border: 1px solid var(--color-accent);
-  background: var(--color-accent);
+  background-color: var(--color-accent);
 
-  outline: none;
   vertical-align: middle;
   white-space: nowrap;
-  transition: background .3s ease-in-out;
+  transition: background-color .3s ease-in-out;
   cursor: pointer;
 
   &:focus,
   &:hover {
-    background: color(var(--color-accent) tint(5%));
+    background-color: color(var(--color-accent) tint(5%));
   }
 }
 
@@ -151,15 +165,6 @@ ul {
 .container {
   adaptive: var(--width-container) auto;
   margin: 0 auto;
-  box-sizing: border-box;
-}
-
-.grid {
-  box-sizing: border-box;
-}
-
-.grid .column {
-  box-sizing: border-box;
 }
 
 .hide {
