@@ -91,10 +91,10 @@ module.exports = {
         }),
         require('postcss-nested-ancestors')(),
         require('postcss-nested')(),
-        require('lost')(),
         require('postcss-bgimage')({
           mode: 'cutter'
         }),
+        require('postcss-flex-short')(),
         require('postcss-adaptive-size')(),
         require('postcss-color-function')(),
         require('postcss-pxtorem')({

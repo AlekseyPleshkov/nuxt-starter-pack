@@ -52,49 +52,48 @@ html, body {
 
 h1 {
   font-size: var(--fs-h1);
-  font-weight: bold;
+  font-weight: 500;
   padding: 0;
   margin: 0;
 }
 
 h2 {
   font-size: var(--fs-h2);
-  font-weight: bold;
+  font-weight: normal;
   padding: 0;
   margin: 0;
 }
 
 h3 {
   font-size: var(--fs-h3);
-  font-weight: bold;
+  font-weight: normal;
   padding: 0;
   margin: 0;
 }
 
 h4 {
   font-size: var(--fs-h4);
-  font-weight: bold;
+  font-weight: normal;
   padding: 0;
   margin: 0;
 }
 
 h5 {
   font-size: var(--fs-h5);
-  font-weight: bold;
+  font-weight: normal;
   padding: 0;
   margin: 0;
 }
 
 h6 {
   font-size: var(--fs-h6);
-  font-weight: bold;
+  font-weight: normal;
   padding: 0;
   margin: 0;
 }
 
 p {
   font-size: var(--fs-normal);
-  font-weight: normal;
   padding: 0;
   margin: 0;
 }
@@ -103,14 +102,25 @@ small {
   font-size: var(--fs-small);
 }
 
+b {
+  font-weight: 500;
+}
+
 a {
+  color: var(--color-accent);
   transition: color 0.3s ease;
+  text-decoration: none;
+  font-weight: 300;
+
+  &:hover {
+    color: color(var(--color-accent) tint(14%));
+  }
 }
 
 input {
-  adaptive: 300px 48px;
+  adaptive: 320px 48px;
 
-  font: var(--fs-normal) var(--ff-normal);
+  font: var(--fs-h6) var(--ff-normal);
   font-weight: normal;
 
   padding-left: 20px;
@@ -118,41 +128,43 @@ input {
   box-sizing: border-box;
   border-radius: 4px;
   border: 1px solid var(--color-primary);
+  box-shadow: 2px 2px 0 0 color(var(--color-primary) shade(20%));
   background-color: #fff;
 
   vertical-align: middle;
   white-space: nowrap;
   transition: border-color .3s ease-in-out, box-shadow .3s ease-in-out;
 
-  &:hover {
-    border-color: color(var(--color-primary) shade(10%));
-  }
-
+  &:hover,
   &:focus {
     border-color: color(var(--color-primary) shade(10%));
-    box-shadow: 0 0 6px 2px color(var(--color-primary) a(60%));
   }
 }
 
 button {
-  adaptive: 300px 48px;
+  adaptive: 320px 48px;
 
-  font: var(--fs-normal) var(--ff-normal);
+  font: var(--fs-h6) var(--ff-normal);
   font-weight: normal;
 
   display: inline-block;
   box-sizing: border-box;
   border-radius: 4px;
-  border: 1px solid var(--color-accent);
-  background-color: var(--color-accent);
+  border: 2px solid var(--color-accent);
+  box-shadow: 2px 2px 0 0 color(var(--color-accent) shade(20%));
+  background-color: transparent;
+  padding: 10px;
 
+  text-align: center;
+  user-select: none;
   vertical-align: middle;
   white-space: nowrap;
-  transition: background-color .3s ease-in-out;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
   cursor: pointer;
 
   &:focus,
   &:hover {
+    color: var(--color-text-invert);
     background-color: color(var(--color-accent) tint(5%));
   }
 }
@@ -165,6 +177,24 @@ ul {
 .container {
   adaptive: var(--width-container) auto;
   margin: 0 auto;
+}
+
+.grid {
+  adaptive: var(--width-container) auto;
+  flex-container: direction-row align-center;
+  margin: 0 auto;
+
+  &--column {
+    flex-container: direction-column align-stretch justify-center;
+  }
+
+  > .column {
+    flex-column: 100% flex-1;
+
+    &--margin {
+      margin-right: 20px;
+    }
+  }
 }
 
 .hide {

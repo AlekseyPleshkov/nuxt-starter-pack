@@ -4937,6 +4937,12 @@ postcss-filter-plugins@^2.0.0:
     postcss "^5.0.4"
     uniqid "^4.0.0"
 
+postcss-flex-short@^0.0.2:
+  version "0.0.2"
+  resolved "https://registry.yarnpkg.com/postcss-flex-short/-/postcss-flex-short-0.0.2.tgz#62d158c69978577792f23a115bf6427cfff948c5"
+  dependencies:
+    postcss "^5.0.19"
+
 postcss-font-family-system-ui@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/postcss-font-family-system-ui/-/postcss-font-family-system-ui-3.0.0.tgz#675fe7a9e029669f05f8dba2e44c2225ede80623"
