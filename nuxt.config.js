@@ -25,7 +25,6 @@ module.exports = {
   ** Plugins
   */
   plugins: [
-    '~plugins/vue-axios',
     '~plugins/vue-scrollto',
     '~plugins/vue-the-mask',
     '~plugins/vue-scroll-show',
@@ -91,9 +90,6 @@ module.exports = {
         }),
         require('postcss-nested-ancestors')(),
         require('postcss-nested')(),
-        require('postcss-bgimage')({
-          mode: 'cutter'
-        }),
         require('postcss-flex-short')(),
         require('postcss-adaptive-size')(),
         require('postcss-color-function')(),
@@ -109,6 +105,7 @@ module.exports = {
    * Modules
    */
   modules: [
+    '@nuxtjs/axios',
     ['nuxt-social-meta', {
       url: 'Site url',
       title: 'Title site',

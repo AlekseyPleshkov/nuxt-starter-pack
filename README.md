@@ -20,7 +20,7 @@ $ npm run generate
 Documentation of [Nuxt](https://github.com/nuxt/nuxt.js)
 
 Plugins and modules
-* Axios & Vue Axios
+* Axios & Nuxt Axios
 * Vue Scrollto
 * Vue The Mask
 * Vue Scroll Show
@@ -34,8 +34,7 @@ PostCSS plugins
 * [postcss-cssnext](https://github.com/MoOx/postcss-cssnext)
 * [postcss-nested-ancestors](https://github.com/toomuchdesign/postcss-nested-ancestors)
 * [postcss-nested](https://github.com/postcss/postcss-nested)
-* [lost](http://lostgrid.org)
-* [postcss-bgimage](https://github.com/ahtohbi4/postcss-bgimage)
+* [postcss-flex-short](https://github.com/AlekseyPleshkov/postcss-flex-short)
 * [postcss-adaptive-size](https://github.com/AlekseyPleshkov/postcss-adaptive-size)
 * [postcss-color-function](https://github.com/postcss/postcss-color-function)
 * [postcss-pxtorem](https://github.com/cuth/postcss-pxtorem)
