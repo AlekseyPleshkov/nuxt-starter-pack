@@ -29,7 +29,8 @@ module.exports = {
     '~plugins/vue-the-mask',
     '~plugins/vue-scroll-show',
     '~plugins/vue-scroll-focus',
-    '~plugins/vue-form-send'
+    '~plugins/vue-form-send',
+    '~plugins/vue-lazyload.js'
   ],
 
   /*

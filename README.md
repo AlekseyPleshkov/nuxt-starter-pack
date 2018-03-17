@@ -26,6 +26,7 @@ Plugins and modules
 * Vue Scroll Show
 * Vue Scroll Focus
 * Vue Form Send
+* Vue Lazyload
 * Nuxt Social Meta
 
 PostCSS plugins
