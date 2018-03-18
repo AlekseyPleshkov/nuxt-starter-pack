@@ -13,16 +13,17 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.1.1",
     "axios": "0.18.0",
     "nuxt": "^1.4.0",
-    "@nuxtjs/axios": "^5.1.1",
     "nuxt-social-meta": "0.0.1",
     "vue-form-send": "0.0.4",
+    "vue-lazyload": "^1.2.2",
     "vue-scroll-focus": "0.0.2",
     "vue-scroll-show": "0.0.4",
     "vue-scrollto": "^2.9.0",
     "vue-the-mask": "^0.11.1",
-    "vue-lazyload": "^1.2.2"
+    "vue2-touch-events": "^1.0.0"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.2",
@@ -34,9 +35,12 @@
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1",
-    "node-sass": "^4.7.2",
     "postcss-adaptive-size": "0.0.1",
+    "postcss-apply": "^0.9.0",
+    "postcss-calc": "^6.0.1",
     "postcss-color-function": "^4.0.1",
+    "postcss-custom-media": "^6.0.0",
+    "postcss-custom-properties": "^7.0.0",
     "postcss-flex-short": "^0.0.2",
     "postcss-inject": "^1.0.1",
     "postcss-nested": "^3.0.0",

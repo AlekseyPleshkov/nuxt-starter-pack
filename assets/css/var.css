@@ -1,8 +1,6 @@
 :root {
   /* Container width and media */
   --width-container: 1200px;
-  --width-mobile: 599px;
-  --width-tablet: 1199px;
 
   /* Color text and main elements */
   --color-text: #232323;
@@ -23,3 +21,6 @@
   --fs-h5: 20px;
   --fs-h6: 16px;
 }
+
+@custom-media --mobile (max-width: 760px);
+@custom-media --tablet (min-width: 761px) and (max-width: 1149px);

@@ -30,7 +30,8 @@ module.exports = {
     '~plugins/vue-scroll-show',
     '~plugins/vue-scroll-focus',
     '~plugins/vue-form-send',
-    '~plugins/vue-lazyload.js'
+    '~plugins/vue-lazyload',
+    '~plugins/vue2-touch-events'
   ],
 
   /*
@@ -86,9 +87,13 @@ module.exports = {
         require('postcss-import')({
           path: ['assets/css']
         }),
-        require('postcss-cssnext')({
-          browsers: ['last 2 versions', '> 1%']
-        }),
+        // require('postcss-cssnext')({
+        //   browsers: ['last 2 versions', '> 1%']
+        // }),
+        require('postcss-custom-properties')(),
+        require('postcss-apply')(),
+        require('postcss-calc')(),
+        require('postcss-custom-media')(),
         require('postcss-nested-ancestors')(),
         require('postcss-nested')(),
         require('postcss-flex-short')(),
@@ -97,6 +102,9 @@ module.exports = {
         require('postcss-pxtorem')({
           propList: ['font', 'font-size', 'line-height', 'letter-spacing'],
           replace: false
+        }),
+        require('autoprefixer')({
+          browsers: ['last 2 versions', 'ie >= 9']
         })
       ]
     }
