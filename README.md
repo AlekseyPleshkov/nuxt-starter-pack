@@ -32,9 +32,12 @@ Plugins and modules
 PostCSS plugins
 * [postcss-inject](https://github.com/iamfrntdv/postcss-inject)
 * [postcss-import](https://github.com/postcss/postcss-import)
-* [postcss-cssnext](https://github.com/MoOx/postcss-cssnext)
 * [postcss-nested-ancestors](https://github.com/toomuchdesign/postcss-nested-ancestors)
 * [postcss-nested](https://github.com/postcss/postcss-nested)
+* [postcss-custom-properties](https://github.com/postcss/postcss-custom-properties)
+* [postcss-calc](https://github.com/postcss/postcss-calc)
+* [postcss-apply](https://github.com/pascalduez/postcss-apply)
+* [postcss-custom-media](https://github.com/postcss/postcss-custom-media)
 * [postcss-flex-short](https://github.com/AlekseyPleshkov/postcss-flex-short)
 * [postcss-adaptive-size](https://github.com/AlekseyPleshkov/postcss-adaptive-size)
 * [postcss-color-function](https://github.com/postcss/postcss-color-function)
