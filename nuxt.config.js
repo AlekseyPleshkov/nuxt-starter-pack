@@ -90,7 +90,9 @@ module.exports = {
         // require('postcss-cssnext')({
         //   browsers: ['last 2 versions', '> 1%']
         // }),
-        require('postcss-custom-properties')(),
+        require('postcss-custom-properties')({
+          preserve: false
+        }),
         require('postcss-apply')(),
         require('postcss-calc')(),
         require('postcss-custom-media')(),

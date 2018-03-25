@@ -41,7 +41,7 @@
     "postcss-color-function": "^4.0.1",
     "postcss-custom-media": "^6.0.0",
     "postcss-custom-properties": "^7.0.0",
-    "postcss-flex-short": "^0.0.2",
+    "postcss-flex-short": "^1.0.0",
     "postcss-inject": "^1.0.1",
     "postcss-nested": "^3.0.0",
     "postcss-nested-ancestors": "^1.0.0",
