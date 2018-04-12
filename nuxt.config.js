@@ -31,6 +31,7 @@ module.exports = {
     '~plugins/vue-scroll-focus',
     '~plugins/vue-form-send',
     '~plugins/vue-lazyload',
+    '~plugins/vue-img',
     '~plugins/vue2-touch-events'
   ],
 
@@ -101,6 +102,7 @@ module.exports = {
         require('postcss-flex-short')(),
         require('postcss-adaptive-size')(),
         require('postcss-color-function')(),
+        require('postcss-responsive-type')(),
         require('postcss-pxtorem')({
           propList: ['font', 'font-size', 'line-height', 'letter-spacing'],
           replace: false

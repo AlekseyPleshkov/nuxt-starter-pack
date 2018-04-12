@@ -43,3 +43,4 @@ PostCSS plugins
 * [postcss-adaptive-size](https://github.com/AlekseyPleshkov/postcss-adaptive-size)
 * [postcss-color-function](https://github.com/postcss/postcss-color-function)
 * [postcss-pxtorem](https://github.com/cuth/postcss-pxtorem)
+* [postcss-responsive-type](https://github.com/seaneking/postcss-responsive-type)
