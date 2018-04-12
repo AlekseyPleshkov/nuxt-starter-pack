@@ -27,6 +27,7 @@ Plugins and modules
 * Vue Scroll Focus
 * Vue Form Send
 * Vue Lazyload
+* Vue Img
 * Vue2 Touch Events
 * Nuxt Social Meta
 
