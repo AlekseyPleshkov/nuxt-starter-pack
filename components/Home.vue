@@ -7,7 +7,14 @@ section.home
   h5 Header H5
   h6 Header H6
   p Normal text
+    small Test small
   a(href='#') Normal link
+
+  div.grid
+    div.column
+      p column 1
+    div.column
+      p column 2
 
   br
   input(type='text' name='name' placeholder='User name')

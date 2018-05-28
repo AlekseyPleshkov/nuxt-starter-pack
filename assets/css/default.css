@@ -44,6 +44,7 @@ html, body {
 
   color: var(--color-text);
   font: var(--fs-normal) var(--ff-normal);
+  font-size: responsive var(--fs-small) var(--fs-normal);
   line-height: normal;
   letter-spacing: normal;
   font-weight: normal;
@@ -52,13 +53,14 @@ html, body {
 
 h1 {
   font-size: var(--fs-h1);
-  font-weight: 500;
+  font-size: responsive var(--fs-h2) var(--fs-h1);
   padding: 0;
   margin: 0;
 }
 
 h2 {
   font-size: var(--fs-h2);
+  font-size: responsive var(--fs-h3) var(--fs-h2);
   font-weight: normal;
   padding: 0;
   margin: 0;
@@ -66,6 +68,7 @@ h2 {
 
 h3 {
   font-size: var(--fs-h3);
+  font-size: responsive var(--fs-h4) var(--fs-h3);
   font-weight: normal;
   padding: 0;
   margin: 0;
@@ -73,6 +76,7 @@ h3 {
 
 h4 {
   font-size: var(--fs-h4);
+  font-size: responsive var(--fs-h5) var(--fs-h4);
   font-weight: normal;
   padding: 0;
   margin: 0;
@@ -80,6 +84,7 @@ h4 {
 
 h5 {
   font-size: var(--fs-h5);
+  font-size: responsive var(--fs-h6) var(--fs-h5);
   font-weight: normal;
   padding: 0;
   margin: 0;
@@ -87,23 +92,19 @@ h5 {
 
 h6 {
   font-size: var(--fs-h6);
+  font-size: responsive var(--fs-normal) var(--fs-h6);
   font-weight: normal;
   padding: 0;
   margin: 0;
 }
 
 p {
-  font-size: var(--fs-normal);
   padding: 0;
   margin: 0;
 }
 
 small {
   font-size: var(--fs-small);
-}
-
-b {
-  font-weight: 500;
 }
 
 a {
@@ -120,58 +121,68 @@ a {
 input {
   adaptive: 320px 48px;
 
-  font: var(--fs-h6) var(--ff-normal);
+  font: var(--fs-normal) var(--ff-normal);
+  font-size: responsive 12px var(--fs-normal);
   font-weight: normal;
 
   padding-left: 20px;
   display: inline-block;
   box-sizing: border-box;
-  border-radius: 4px;
+  border-radius: 6px;
   border: 1px solid var(--color-primary);
-  box-shadow: 2px 2px 0 0 color(var(--color-primary) shade(20%));
   background-color: #fff;
 
   vertical-align: middle;
   white-space: nowrap;
   transition: border-color .3s ease-in-out, box-shadow .3s ease-in-out;
+  appearance: none;
 
   &:hover,
   &:focus {
-    border-color: color(var(--color-primary) shade(10%));
+    box-shadow: 0 0 10px 0 color(var(--color-accent) a(20%));
   }
 }
 
 button {
-  adaptive: 320px 48px;
-
-  font: var(--fs-h6) var(--ff-normal);
+  color: var(--color-text-invert);
+  font: var(--fs-small) var(--ff-small);
+  font-size: responsive var(--fs-small) var(--fs-normal);
   font-weight: normal;
+  line-height: 48px;
 
   display: inline-block;
   box-sizing: border-box;
-  border-radius: 4px;
-  border: 2px solid var(--color-accent);
-  box-shadow: 2px 2px 0 0 color(var(--color-accent) shade(20%));
-  background-color: transparent;
-  padding: 10px;
+  border-radius: 6px;
+  border: 0;
+  background-color: var(--color-accent);
+  padding: 0 32px;
+  box-shadow: 0 0 25px 0 color(var(--color-accent) a(0%));
 
   text-align: center;
   user-select: none;
   vertical-align: middle;
   white-space: nowrap;
-  transition: background-color .3s ease-in-out, color .3s ease-in-out;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out, box-shadow .3s ease-in-out;
   cursor: pointer;
 
   &:focus,
   &:hover {
-    color: var(--color-text-invert);
     background-color: color(var(--color-accent) tint(5%));
+    box-shadow: 0 0 15px 0 color(var(--color-accent) a(40%));
   }
 }
 
 ul {
   padding: 0;
   margin: 0;
+}
+
+header,
+section {
+  @media (--container) {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
 }
 
 .container {
@@ -188,8 +199,12 @@ ul {
     flex-container: direction-column align-stretch justify-center;
   }
 
+  &--wrap {
+    flex-wrap: wrap;
+  }
+
   > .column {
-    flex-column: 100% flex-1;
+    flex-column: width-100% flex-1;
 
     &--margin {
       margin-right: 20px;
