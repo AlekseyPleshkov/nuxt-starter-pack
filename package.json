@@ -1,6 +1,6 @@
 {
   "name": "nuxt-starter-pack",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Vue/Nuxt starter pack",
   "author": "Aleksey Pleshkov <im@alekseypleshkov.ru>",
   "private": true,
@@ -18,14 +18,15 @@
     "axios": "^0.18.0",
     "nuxt": "^1.4.0",
     "nuxt-social-meta": "^0.0.1",
+    "v-img": "^0.2.0",
     "vue-form-send": "^0.1.0",
     "vue-lazyload": "^1.2.3",
     "vue-scroll-focus": "^0.0.2",
     "vue-scroll-show": "^0.0.5",
     "vue-scrollto": "^2.11.0",
     "vue-the-mask": "^0.11.1",
-    "v-img": "^0.2.0",
-    "vue2-touch-events": "^1.0.0"
+    "vue2-touch-events": "^1.0.0",
+    "prettier": "1.12.1"
   },
   "devDependencies": {
     "babel-eslint": "^8.2.3",
@@ -37,6 +38,7 @@
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-standard": "^3.1.0",
+    "ftp-deploy": "^2.1.1",
     "postcss-adaptive-size": "0.0.1",
     "postcss-apply": "^0.10.0",
     "postcss-calc": "^6.0.1",
@@ -50,7 +52,6 @@
     "postcss-pxtorem": "^4.0.1",
     "postcss-responsive-type": "^1.0.0",
     "pug": "^2.0.3",
-    "pug-loader": "^2.4.0",
-    "ftp-deploy": "^2.1.1"
+    "pug-loader": "^2.4.0"
   }
 }

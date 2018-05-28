@@ -88,9 +88,6 @@ module.exports = {
         require('postcss-import')({
           path: ['assets/css']
         }),
-        // require('postcss-cssnext')({
-        //   browsers: ['last 2 versions', '> 1%']
-        // }),
         require('postcss-custom-properties')({
           preserve: false
         }),
