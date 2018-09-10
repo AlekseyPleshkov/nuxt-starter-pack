@@ -22,7 +22,7 @@ section.home
 </template>
 
 
-<style lang="postcss">
+<style>
 .home {
   adaptive: 100% auto;
 }
