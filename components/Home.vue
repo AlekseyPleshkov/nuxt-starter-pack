@@ -17,9 +17,23 @@ section.home
       p column 2
 
   br
-  input(type='text' name='name' placeholder='User name')
-  button Button send
+  form(v-form-send='{success: formSuccess, fail: formFail}' action='./send.php' method='post')
+    input(v-form-input='{length: 5}' type='text' name='name' placeholder='User name')
+    button Button send
 </template>
+
+<script>
+export default {
+  methods: {
+    formSuccess () {
+      console.log('success')
+    },
+    formFail () {
+      console.log('fail')
+    }
+  }
+}
+</script>
 
 
 <style>
