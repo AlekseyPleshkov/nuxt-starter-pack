@@ -192,11 +192,11 @@ section {
 
 .grid {
   adaptive: var(--width-container) auto;
-  flex-container: direction-row align-center;
+  flex-container: direction row, align center;
   margin: 0 auto;
 
   &--column {
-    flex-container: direction-column align-stretch justify-center;
+    flex-container: direction column, align stretch, justify center;
   }
 
   &--wrap {
@@ -204,7 +204,7 @@ section {
   }
 
   > .column {
-    flex-column: width-100% flex-1;
+    flex-column: width 100%, flex 1;
 
     &--margin {
       margin-right: 20px;
