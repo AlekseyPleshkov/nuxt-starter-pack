@@ -1,6 +1,6 @@
 # hydra-webpack-nuxt
 
-Vue/Nuxt starter pack. Pug and PostCSS.
+Vue/Nuxt starter pack. Pug, PostCSS, Docker, Gitlab CI auto deploy.
 
 ## Install
 
@@ -13,7 +13,19 @@ $ nuxt
 
 # Build static
 $ npm run generate
+
+# Production server
+$ node server
 ```
+
+## GitLab Deploy
+
+#### CI Variables
+
+- SSH_PRIVATE_KEY (for connection to server)
+- SSH_KNOWN_HOSTS (ip or domain)
+- SSH_DIR (upload directory for source)
+- PROJECT_NAME (for docker)
 
 ## More information
 
