@@ -21,4 +21,4 @@ deploy:
     - ssh-keyscan "$SSH_KNOWN_HOSTS" >> ~/.ssh/known_hosts
     - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
     - rsync -rav --delete ./ root@"$SSH_KNOWN_HOSTS":"$SSH_DIR"
-    - ssh -t root@"$SSH_KNOWN_HOSTS" "cd $SSH_DIR && docker stop $PROJECT_NAME || true && docker build --no-cache -t $PROJECT_NAME . && docker run -d -p 3000:3000 --rm --name $PROJECT_NAME $PROJECT_NAME"
+    - ssh -t root@"$SSH_KNOWN_HOSTS" "cd $SSH_DIR && docker build --no-cache -t $PROJECT_NAME . && docker stop $PROJECT_NAME || true && docker rm $PROJECT_NAME && docker run -d -p 3000:3000 --restart=always --name $PROJECT_NAME $PROJECT_NAME"
