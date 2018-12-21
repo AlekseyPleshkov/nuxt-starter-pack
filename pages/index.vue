@@ -1,15 +1,15 @@
 <template lang="pug">
   div.index
-    <home-block/>
+    home-block
 </template>
 
 
 <script>
-import HomeBlock from '~/components/Home'
+  import HomeBlock from '~/components/Home'
 
-export default {
-  components: {
-    HomeBlock
+  export default {
+    components: {
+      HomeBlock
+    }
   }
-}
 </script>

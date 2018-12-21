@@ -5,12 +5,12 @@
 
 
 <script>
-export default {
-  mounted () {
-    console.log('////////////////////////////////////////')
-    console.log('Разработка сайта - alekseypleshkov.ru')
-    console.log('Хайль Гидра!')
-    console.log('////////////////////////////////////////')
+  export default {
+    mounted () {
+      console.log('////////////////////////////////////////')
+      console.log('Разработка сайта - alekseypleshkov.ru')
+      console.log('Хайль Гидра!')
+      console.log('////////////////////////////////////////')
+    }
   }
-}
 </script>
