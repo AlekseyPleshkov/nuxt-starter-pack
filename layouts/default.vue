@@ -3,7 +3,6 @@
     nuxt
 </template>
 
-
 <script>
   export default {
     mounted () {

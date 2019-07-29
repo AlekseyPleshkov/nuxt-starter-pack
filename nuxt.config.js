@@ -104,9 +104,7 @@ module.exports = {
           propList: ['font', 'font-size', 'line-height', 'letter-spacing'],
           replace: false
         }),
-        require('autoprefixer')({
-          browsers: ['last 2 versions', 'ie >= 9']
-        })
+        require('autoprefixer')()
       ]
     }
   },

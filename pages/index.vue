@@ -3,7 +3,6 @@
     home-block
 </template>
 
-
 <script>
   import HomeBlock from '~/components/Home'
 

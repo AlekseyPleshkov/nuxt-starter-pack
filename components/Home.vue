@@ -35,7 +35,6 @@
   }
 </script>
 
-
 <style scoped>
   .home {
     adaptive: 100% auto;
