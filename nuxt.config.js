@@ -39,8 +39,8 @@ module.exports = {
    ** Router
    */
   router: {
-    mode: 'hash'
-    // base: '/dir/',
+    mode: 'history',
+    base: '/',
     // extendRoutes (routes, resolve) {
     //   routes.push({
     //     name: '/',
@@ -62,7 +62,7 @@ module.exports = {
   */
   build: {
     // Extract css to file
-    extractCSS: true,
+    extractCSS: process.env.NODE_ENV !== 'development',
     /*
     ** Run ESLint on save
     */
